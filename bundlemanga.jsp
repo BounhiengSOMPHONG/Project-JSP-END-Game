@@ -72,13 +72,13 @@ try{
             <div class="main-cont">
             <%
             //แสดงค่า
-            PreparedStatement pm = conn.prepareStatement("SELECT * FROM manga where bt_id=10");
+            PreparedStatement pm = conn.prepareStatement("SELECT * FROM manga where mt_id=10");
             ResultSet rsm = pm.executeQuery();
             %>
                  <%
                     while (rsm.next()) {
                  %>
-                 <div class="mybook"><a href="sellbook.jsp?b_id=<%= rsb.getString("b_id") %>" class=""><img src="assets/pictures/pic_manga/<%= rsm.getString("m_image") %>" alt="" class="coverbook"></a></div>
+                 <div class="mybook"><a href="sellbook.jsp?b_id=<%= rsm.getString("b_id") %>" class=""><img src="assets/pictures/pic_manga/<%= rsm.getString("m_image") %>" alt="" class="coverbook"></a></div>
                 <%
                 }
                 %>

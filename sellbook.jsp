@@ -31,24 +31,24 @@ try{
     <div class="container">
         <div class="between">
             <div class="logo">
-                <a href="../index.html" class="home-logo"><h1 class="logo">Logo</h1></a>
+                <a href="index.jsp" class="home-logo"><h1 class="logo"><img src="assets/pictures/thirdeyes.jpeg" alt=""></h1></a>
             </div>
             <div class="register">
-                <a href="../login and register/register.html" >ສ້າງບັນຊີ</a>
+                <a href="../login and register/register.jsp" >ສ້າງບັນຊີ</a>
                 <a href="../login and register/login.html" >ເຂົ້າສູ່ລະບົບ</a>
             </div>
         </div>
         <div class="below-navbar">
             <ul>
-                <li><a href="../book.html" class="book">ປຶ້ມ</a></li>
-                <li><a href="../manga.html" class="manga">ປຶ້ມກາຕູນ</a></li>
+                <li><a href="book.jsp" class="book">ປຶ້ມ</a></li>
+                <li><a href="manga.jsp" class="manga">ປຶ້ມກາຕູນ</a></li>
                 <li> <div class="dropdown">
                     <div class="selector">
                         <div class="hover">ຫມວດຫມູ່</div><i class="bi bi-chevron-down icon"></i>
                     </div>
                     <div class="lists">
-                        <div class="list"><a href="../bundlebook.html" target="_blank" class="hover">bundlebook</a></div>
-                        <div class="list"><a href="../bundlemanga.html" target="_blank" class="hover">bundlemanga</a></div>
+                        <div class="list"><a href="bundlebook.jsp" target="_blank" class="hover">bundlebook</a></div>
+                        <div class="list"><a href="bundlemanga.jsp" target="_blank" class="hover">bundlemanga</a></div>
                     </div>
                 </div></li>
                 <li><a href="#" class="about">ກ່ຽວກັບເຮົາ</a></li>

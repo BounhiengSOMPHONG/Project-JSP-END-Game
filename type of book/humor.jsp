@@ -89,7 +89,7 @@ try{
                  <%
                     while (rsb.next()) {
                  %>
-                <div class="mybook"><a href="sellbook.jsp?b_id=<%= rsb.getString("b_id") %>"><img src="../assets/pictures/pic_book/adventure/<%= rsb.getString("b_image") %>" alt=""></a></div>
+                <div class="mybook"><a href="../sellbook.jsp?b_id=<%= rsb.getString("b_id") %>"><img src="../assets/pictures/pic_book/adventure/<%= rsb.getString("b_image") %>" class="coverbook" alt=""></a></div>
                 <%
                 }
                 %>

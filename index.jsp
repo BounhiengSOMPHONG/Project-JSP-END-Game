@@ -65,7 +65,7 @@ try{
             <div class="main-cont">
             <%
             //แสดงค่า
-            PreparedStatement pb = conn.prepareStatement("SELECT * FROM book LIMIT 9");
+            PreparedStatement pb = conn.prepareStatement("SELECT * FROM book LIMIT 6");
             ResultSet rsb = pb.executeQuery();
             %>
                  <%
@@ -88,7 +88,7 @@ try{
             <div class="main-cont">
                         <%
             //แสดงค่า
-            PreparedStatement pm = conn.prepareStatement("SELECT * FROM manga LIMIT 9");
+            PreparedStatement pm = conn.prepareStatement("SELECT * FROM manga LIMIT 6");
             ResultSet rsm = pm.executeQuery();
             %>
                  <%
