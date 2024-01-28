@@ -20,6 +20,9 @@ try{
 <link rel="stylesheet" href="./assets/style.css">
 <body>
     <style>
+    .con-cont{
+	height: 200vh;
+}
         .manga {
         border: 2px solid #000;
         border-top:none ;
@@ -33,8 +36,16 @@ try{
                 <a href="index.jsp" class="home-logo"><h1 class="logo"><img src="assets/pictures/thirdeyes.jpeg" alt=""></h1></a>
             </div>
             <div class="register">
-                <a href="./login and register/register.jsp" >ສ້າງບັນຊີ</a>
+            <%  String loginU = String.valueOf(session.getAttribute("login"));
+            Boolean b1 = Boolean.valueOf(loginU);
+            //out.print("test"+b1);
+            %>
+            <% if(b1!=true){ %>
+            	<a href="./login and register/register.jsp" >ສ້າງບັນຊີ</a>
                 <a href="./login and register/login.html" >ເຂົ້າສູ່ລະບົບ</a>
+            <%}else{ %>
+            	<a href="./login and register/logout.jsp" >ອອກຈາກບັນຊີ</a>
+            <%} %>
             </div>
         </div>
         <div class="below-navbar">
@@ -71,7 +82,7 @@ try{
                  <%
                     while (rsm.next()) {
                  %>
-                 <div class="mybook"><a href="sellbook.jsp?b_id=<%= rsm.getString("b_id") %>" class=""><img src="assets/pictures/pic_manga/<%= rsm.getString("m_image") %>" alt="" style='width: 100px;'></a></div>
+                 <div class="mybook"><a href="sellbook.jsp?b_id=<%= rsm.getString("m_id") %>" class=""><img class="coverbook" src="assets/pictures/pic_manga/<%= rsm.getString("m_image") %>" alt="" ></a></div>
                 <%
                 }
                 %>

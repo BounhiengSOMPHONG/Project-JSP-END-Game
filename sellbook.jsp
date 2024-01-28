@@ -34,8 +34,16 @@ try{
                 <a href="index.jsp" class="home-logo"><h1 class="logo"><img src="assets/pictures/thirdeyes.jpeg" alt=""></h1></a>
             </div>
             <div class="register">
-                <a href="../login and register/register.jsp" >ສ້າງບັນຊີ</a>
-                <a href="../login and register/login.html" >ເຂົ້າສູ່ລະບົບ</a>
+            <%  String loginU = String.valueOf(session.getAttribute("login"));
+            Boolean b1 = Boolean.valueOf(loginU);
+            //out.print("test"+b1);
+            %>
+            <% if(b1!=true){ %>
+            	<a href="./login and register/register.jsp" >ສ້າງບັນຊີ</a>
+                <a href="./login and register/login.html" >ເຂົ້າສູ່ລະບົບ</a>
+            <%}else{ %>
+            	<a href="./login and register/logout.jsp" >ອອກຈາກບັນຊີ</a>
+            <%} %>
             </div>
         </div>
         <div class="below-navbar">
